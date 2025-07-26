@@ -1,23 +1,53 @@
 {
   "name": "@mpah/enum-value-help",
   "version": "1.0.0",
-  "description": "CAP CDS plugin to add enum value help to entities",
+  "description": "CAP CDS plugin that automatically generates value help functionality for enum fields in your CDS models",
   "main": "cds-plugin.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "cds": {
     "models": [
       "index.cds"
     ]
   },
   "files": [
-    "cds-plugin.js"
+    "cds-plugin.js",
+    "index.cds",
+    "README.md"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run test",
+    "version": "git add -A && git commit -m \"Release v%s\"",
+    "postversion": "git push && git push --tags"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "sap",
+    "cap",
+    "cds",
+    "plugin",
+    "enum",
+    "value-help",
+    "fiori",
+    "odata",
+    "cloud-application-programming",
+    "sap-cap"
+  ],
+  "author": "Maksim Pahlberg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpah/enum-value-help.git"
+  },
+  "homepage": "https://github.com/mpah/enum-value-help#readme",
+  "bugs": {
+    "url": "https://github.com/mpah/enum-value-help/issues"
+  },
   "license": "Apache-2.0",
   "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@sap/cds": ">=8"
   },
