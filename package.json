@@ -1,0 +1,27 @@
+{
+  "name": "@mpah/enum-value-help",
+  "version": "1.0.0",
+  "description": "CAP CDS plugin to add enum value help to entities",
+  "main": "cds-plugin.js",
+  "cds": {
+    "models": [
+      "index.cds"
+    ]
+  },
+  "files": [
+    "cds-plugin.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "peerDependencies": {
+    "@sap/cds": ">=8"
+  },
+  "devDependencies": {
+    "@sap/cds": "^8.9.5"
+  }
+}
