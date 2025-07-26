@@ -18,7 +18,6 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run test",
     "version": "git add -A && git commit -m \"Release v%s\"",
     "postversion": "git push && git push --tags"
   },
